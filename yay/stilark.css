@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(3, 20, 26)
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(193, 243, 234);
+    size: 200%
+}
+
+h2 {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(156, 210, 200)
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(238, 255, 252)
+}
+
+.weehee {
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red 
+}
+
+.boks {
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red 
+}
