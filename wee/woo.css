@@ -1,0 +1,18 @@
+#hoved {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  background-color: #c6c6c6;
+  /* grid-template-columns: 50px auto 50px;--> 
+  grid-template-rows: 50px auto 50px; */
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+#hoved > div:nthchild(odd) {
+  background-color: black; 
+  background-color: #f7fffe;
+  border: 1px solid black;
+}
+  }
+  
