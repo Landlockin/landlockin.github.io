@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilbakemeldingskjema</title>
+</head>
+<body>
+
+<!-- Lag et tilbakemeldingsskjema for en nettside. 
+ Skjemaet skal inneholde felter for navn, 
+ e-post, en vurdering (1-5 stjerner), og et tekstområde 
+ for kommentarer. Implementer validering for e-postfeltet 
+ og sørg for at kommentarfeltet ikke kan være tomt.-->
+
+<form id="skjema">
+    <label for="name">Navn:</label> <!-- EEEE-->
+    <input type="name" id="name" name="name" required>
+
+    <label for="email">E-post:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="stjerner">Rating::</label> <!-- EEEE-->
+    <select id="stjerner" name="stjerner" multiple>
+        <option value="stjerner_1">1 stjerne</option>
+        <option value="stjerner_2">2 stjerner</option>
+        <option value="stjerner_3">3 stjerner</option>
+        <option value="stjerner_4">4 stjerner</option>
+        <option value="stjerner_5">5 stjerner</option>
+    </select>
+
+    <label for="comment">Tilbakemelding:</label>
+    <input type="comment" id="comment" name="comment" required>
+
+    <button type="submit">Send inn</button>
+</form>
+
+</body>
+</html>

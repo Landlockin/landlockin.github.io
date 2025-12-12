@@ -1,0 +1,78 @@
+body {
+    flex-direction: column;
+    background-color: #fffbfb;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+img {
+    border-radius: 25px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-weight: bold; 
+  
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+#spiderman {
+  min-height: 100vh;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "v v v h h"
+    "v v v h h"
+    ". . . h h";
+}
+#spiderman > div {
+  border: 3px #e6fffd;
+  margin: 12px;
+  border-radius: 45px;
+  transition: 0.6s;
+}
+.venstre1 { grid-area : v; }
+.hoyre1   { grid-area : h; }
+
+.hoyre1 {
+  background-color: #f5f5f5;
+}
+
+.venstre1 {
+  background-color: #fb9494;
+}
+
+#info {
+  min-height: 100vh;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 2fr);
+  grid-template-areas: 
+    "v v m m h h"
+    "v v m m h h"
+    "v v m m h h"
+}
+#info > div {
+  background-color: #e7e7e7d0;
+  border: 10px #999999;
+  border-radius: 25px;;
+  margin: 12px;
+}
+.venstre { grid-area : v; }
+.middels { grid-area : m; }
+.hoyre   { grid-area : h; }

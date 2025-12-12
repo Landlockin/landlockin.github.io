@@ -1,0 +1,74 @@
+.separator {
+      height: 30px;
+      background-color: rgb(221, 234, 232); 
+      border-radius: 25px;
+}
+#layout0 {
+  min-height: 100vh;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 2fr);
+  grid-template-areas: 
+    "t t t t t"
+    "v . h h h"
+    "v . h h h";
+}
+#layout0 > div {
+  background-color: #aac9c6;
+  border: 3px #e6fffd;
+  margin: 12px;
+  border-radius: 45px;
+  transition: 0.6s;
+}
+.topp    { grid-area : t; }
+.venstre { grid-area : v; }
+.hoyre   { grid-area : h; }
+
+#layout0 > div:hover {
+  background-color: yellow;
+  font-size: 18px;
+}
+
+#layout1 {
+  min-height: 100vh;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 2fr);
+  grid-template-areas: 
+    "v v h h h"
+    "v v h h h"
+    "v v h h h";
+}
+#layout1 > div {
+  background-color: #aac9c6;
+  border: 3px #e6fffd;
+  border-radius: 45px;;
+  margin: 12px;
+}
+.venstre { grid-area : v; }
+.hoyre   { grid-area : h; }
+
+#layout2 {
+  min-height: 100vh;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(5, 2fr);
+  grid-template-areas: 
+    "t t t t t t t t t t"
+    "m m m m m m m m m m"
+    "m m m m m m m m m m"
+    "m m m m m m m m m m"
+    "b b b b b b b b b b";
+}
+#layout2 > div {
+  background-color: #aac9c6;
+  border: 3px #e6fffd;
+  border-radius: 45px;
+  margin: 12px;
+}
+.topp    { grid-area : t; }
+.middel  { grid-area : m; }
+.bunn    { grid-area : b; }

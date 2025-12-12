@@ -1,11 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> <!-- Bruk ! til å generere basic koden automatisk, trenger ikke KI. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="portfoli.css">
+    <style> 
+    /* collapse knapp */
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  
+}
+
+.button {
+  left: 1;
+  bottom: 0;
+  position: fixed
+}
+
+.weehee {
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red 
+}
+
+.boks {
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red 
+}
+
+.container_row {
+  display: flex
+}
+
+</style> <!-- display: flex -->
+    <title>MUSIC</title>
 </head>
 <body>
+    <a href="index.html" class="button">
+     <img src="bilder\cat.gif" height="80"/>
+    </a>
+
     <p>badada badum da vbunsd fudnsj (epic beatboxing)</p>
+    <center><h1>asdfgbefdgt.</h1></center>
+
+    <!-- Video -->
+
+    <!-- Youtube video av noen sin tutorial -->
+
+    <!-- Liten introduksjon i en rund div boks-->
+     
+    <!-- Table of contents -->
+
+   <!-- Ikoner og bilder som bruker flexbox, kan ha stickers som solsikker -->
+
+   <!-- Ikoner i tabellene og? Kan ha både link og exported musikkfil-->
+
+
+<button class="collapsible">The First Ones</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<!-- Tabell ? Vi kan ha navn, dato og noen notater -->
+</div>
+<button class="collapsible">Open Section 2</button>
+<div class="content">
+  <p>her er hvor tabellen skal være</p>
+  <a href=https://tinyurl.com/26beow6q>8BITPOP</a>
+  <a href=https://tinyurl.com/26z97dhh>Triangles</a>
+  <!-- Disse må jeg få oppå hverandre  -->
+</div>
+<button class="collapsible">Open Section 3</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
 </body>
 </html>

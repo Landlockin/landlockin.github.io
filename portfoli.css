@@ -1,6 +1,8 @@
 body {
   background: url(bilder\test.jpg) no-repeat center center fixed;
-    background-size: auto; 
+  background-size: auto; 
+  background-color: peachpuff;
+  color: rgb(52, 3, 3)
 }
 .sidebar {
     width: 120px;
